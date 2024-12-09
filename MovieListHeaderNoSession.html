@@ -10,6 +10,7 @@
 
 <html>
     <head>
+        <meta charset="UFT-8">
         <!--Font Links - allows for use of Google fonts IBM Plex Sans and Baumans in the Website-->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -38,9 +39,13 @@
             <input type= "text" placeHolder="Search MovieList...">
 
             <!--Links to other parts of the website, will not lead to any other page without log in-->
-            <a href="#">Discover</a>
-            <a href="#"> Random Movie</a>
-            <a href="#">My Lists</a>
+
+            <div class="links">
+                <a href="#">Discover</a>
+                <a href="#"> Random Movie</a>
+                <a href="#">My Lists</a>
+            </div><!--End link list-->
+            
             
 
             <!--Button that allows for a user to log in or sign up-->
@@ -93,11 +98,20 @@
         </div><!--end signupPopup-->
 
         
-        <div class="test">
-            <h2>Web Building in Progress ...</h2>
-        </div>
+        <div class="homePage" id="homePage">
+            <p class="bold" id="header1"> Getting through your movie bucket list <br> just got a whole lot easier</p>
+            <p class="normal" id="subheader1">Keep track of the latest trending movies across streaming platforms</p>
+            
+            <button id="logInButton1" type="button" onclick="openPopUp('accountStart')"> Start Searching</button>
+
+            <p class="bold" id="header2"> Discover movies through pure luck </p>
+            <p class="normal" id="subheader2">Use our random movie selector to find your new favorites!</p>
+
+            <button id="logInButton2" type="button" onclick="openPopUp('accountStart')"> Randomize! </button>
+            
+        </div> <!--end homePage-->
     
-    </div>
+    </div> <!--end window-->
 
     </body>
 </html>
