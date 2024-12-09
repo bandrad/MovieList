@@ -4,29 +4,32 @@
 * This file is made up of the CCS Styling used for MovieList Website
 */
 
-
+        /*Stylings fot Baumans Google font to be used in website*/
         .baumans-regular {
         font-family: "Baumans", system-ui;
         font-weight: 400;
         font-style: normal;
         }
 
+        /*Stylings for IBM Plex Regular (subheading text) to be used in website*/
         .ibm-plex-sans-regular {
         font-family: "IBM Plex Sans", sans-serif;
         font-weight: 400;
         font-style: normal;
         }
 
-
+        /*Sets window background color*/
         body{
         background-color: 2B2731;
         }
 
+        /*Sets the display height and width for the window*/
         .window{
             height:100%;
-            weight:100%;
+            width:100%;
         }
 
+        /*Logotype Stylings*/
         .navigationtab p{
             color: 9058D8;
             font-family:'Baumans',regular;
@@ -38,6 +41,7 @@
             padding: 15px;
         }
 
+        /*Stylings of the navigation tab link list*/
          .navigationtab a{
             text-decoration:none;
             color: 9058D8;
@@ -47,31 +51,47 @@
             font-family:"IBM Plex Sans", sans-serif;
 
             position: relative;
-            left:250;
+            left: 450;
+            top: 0;
+            
+            }
+
+            /*Positioning of the Links on Navigation Tab*/
+            .links{
+            position: fixed;
+            left: 850;
+            top: 30;
+            
             }
         
 
+        /*Stylings of the log in button on the navigation tab*/
         .navigationtab button{
             background-color: 9058D8;
             border: none;
             color:CEC3D3;
-            text-algin: center;
+            text-align: center;
             font-size: 22px;
             font-family: "Baumans", regular;
             height: 45;
             width:100;
             border-radius: 8px;
 
-            position: relative;
-            top:5;
-            left:275;
+            position: fixed;
+            top:20;
+            right:25;
         }
 
+        /*Stylings of the container containing the navigation tab, allows the tab to stay at the top of the screen regardless of scrolling*/
         .navigationtab{
+            background-color: 2B2731;
             position: sticky;
             top:0;
+            width: 100;
+            height: 60;
         }
 
+        /*Search Bar Stylings*/
         .navigationtab input[type=text]{
             background-color: 372C43;
             color: CEC3D3;
@@ -81,14 +101,75 @@
             width: 500;
             padding: 10px;
 
-            position: relative;
-            left: 30;
+            position: fixed;
+            left: 275;
+            top: 25;
             
         }
 
-        .test h2{
-            font-family:"Baumans", regular;
-            font-size: 44px;
+        /*Stylings of home page main text*/
+        .bold{
             color: CEC3D3;
-            text-align:center;
-            }
+            font-family: "Baumans", regular;
+            text-align: center;
+            font-size: 36px;
+        }
+
+        /*Stylings of the subheader text on the home page*/
+        .normal{
+            color:CEC3D3;
+            font-family: "Baumans", regular;
+            text-align: center;
+            font-size: 24px;
+            opacity: 0.5;
+        }
+
+        /*Stylings of the log in button on the navigation tab*/
+        .homePage button{
+            background-color: 9058D8;
+            border: none;
+            color:CEC3D3;
+            text-align: center;
+            font-size: 20px;
+            font-family: "Baumans", regular;
+            height: 60;
+            width:200;
+            border-radius: 12px;
+        }
+
+        /*The remainder part of this file contains the CCS code that lays out the position of all elements on the homepage*/
+
+       #header1{
+        position:relative;
+        top: 200;
+        margin:auto;
+       }
+
+       #subheader1 {
+        position: relative;
+        top: 175;
+       }
+
+       #logInButton1{
+        position:relative;
+        top:200;
+        left: 800;
+       }
+
+       #header2 {
+        position:relative;
+        top: 300;
+       }
+
+       #subheader2{
+        position:relative;
+        top: 275;
+       }
+
+       #logInButton2 {
+        position: relative;
+        top: 300;
+        left: 800;
+       }
+
+   
